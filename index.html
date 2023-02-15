@@ -10,19 +10,22 @@
 <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <a href="#">Caps</a>
+        <div class="navbar__logo">
+            <img src="imgs/favicon_caps.png" width="100" height="100">
+            <!-- <a href="#">Caps</a> -->
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar__menu__item" active data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#Who">Who</li>
+            <li class="navbar__menu__item" data-link="#What">What</li>
+            <li class="navbar__menu__item" data-link="#Where">Where</li>
+            <!-- <li class="navbar__menu__item" data-link="#Apply">Apply</li> -->
+        </ul>
     </nav>
-    <ul class="navbar_menu">
-        <li class="navbar__menu__item" active data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#Who">Who</li>
-        <li class="navbar__menu__item" data-link="#What">What</li>
-        <li class="navbar__menu__item" data-link="#Where">Where</li>
-        <li class="navbar__menu__item" data-link="#Apply">Apply</li>
-    </ul>
     <!-- Home -->  
     <section id="home">
-        <!-- <img src="imgs/profile.png" alt="cielo's profile photo" class="home__avatar"> -->
-        <h1 class="home__title">안녕하세요<br/> 동국대학교 프로그래밍 중앙동아리 Caps입니다.</h1>
+        <img src="imgs/background__caps.png" alt="cielo's profile photo" class="home__avatar">
+        <!-- <h1 class="home__title">안녕하세요<br/> 동국대학교 프로그래밍 중앙동아리 Caps입니다.</h1> -->
         <!-- <h2 class="home__description">A Software Engineer</h2> -->
         <button class="home__apply">Apply</button>
     </section>

@@ -1,16 +1,113 @@
+/* Global */
+:root{
+  /* Color */
+  --color-main:#eedaa6;
+  --color-blue:#90d0ff;
+  --color-white: #ffffff;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+}
+/* Universal tag */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  cursor: default;
+}
+a{
+  text-decoration: none;
+  color:var(--color-white);
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+li{
+  list-style: none;
+}
+button{
+  background-color: transparent;
+  cursor:pointer;
+  border:none;
+  outline:none;
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+  /* Universal tag */
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+  }
+  a{
+    text-decoration: none;
+    color:var(--color-white);
+  }
+  ul{
+    list-style: none;
+    padding-left: 0;
+  }
+  li{
+    list-style: none;
+  }
+  button{
+    background-color: transparent;
+    cursor:pointer;
+    border:none;
+    outline:none;
+  }
+
+  ul li{
+    display:inline-block;
+  }
+  
+
 /* Nabar */
 #navbar {
     display: flex; /*양쪽에 박스가 나올수 있게 함*/
     justify-content: space-between; /*박스 사이 공간*/
-    /* background-color: var(--color-lightblue); */
+    background-color: var(--color-blue);
     /* align-items: center; */
-    /* color:var(--color-black); */
     padding: 16px;
   }
 
   .navbar__menu{
     display: flex;
-    /* color:var(--color-dark-blue); */
   }
 
   .navbar__menu__item{
@@ -20,15 +117,33 @@
     border-radius: var(--size-border-radius);
   }
 
+  .navbar__menu__item.active{
+    border: 1px solid var(--color-white);
+    border-radius: var(--size-border-radius);
+  }
+
+  .navbar__menu__item:hover{
+    /* background-color:#eedaa6; */
+    background-color: #ffffff;
+  }
+
+
   #home{
-    background: url("imgs/background.png") center/cover no-repeat;
+    background:var(--color-main);
     padding: 40px;
     text-align: center;
   }
-  /* 완 */
-  .home__title, .home__description{
-    color:cornflowerblue;
+
+  .home__avatar{
+    width: 800px;
+    height: 600px;
+    /* border-radius: 50%; */
+    /* border: 2px soild var(--color-light-white); */
   }
+  /* 완 */
+  /* .home__title, .home__description{
+    color:cornflowerblue;
+  } */
 
   .home__contact{
     font-size: large;
