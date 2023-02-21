@@ -239,3 +239,49 @@ p {
     }
   } 
   */
+
+  /* who */
+
+#Who {
+  background-color: var(--color-white);
+  margin-left: 450px;
+  margin-right: 450px;
+}
+
+.Who {
+  margin: 40px;
+}
+
+
+.people {
+  display: flex;
+  margin: 32px 0;
+}
+
+.people__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.people__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.people__avatar:nth-child(even) {
+  margin-left: 20px;
+}
+
+.people__speech-bubble {
+  padding: 18px;
+  background-color: var(--color-main);
+  border-radius: var(--size-border-radius);
+}
+
+.people__speech-bubble p {
+  color: black;
+}
+
+.people__speech-bubble a {
+  color: blue;
+}
