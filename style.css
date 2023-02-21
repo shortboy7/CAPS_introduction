@@ -4,6 +4,7 @@
   --color-main:#eedaa6;
   --color-blue:#90d0ff;
   --color-white: #ffffff;
+  --color-purpleblue:#4D28F2;
 
   /* Size */
   --size-border-radius: 4px;
@@ -105,6 +106,24 @@ p {
     /* align-items: center; */
     padding: 16px;
   }
+  .navbar__logo{
+    position: relative;
+    width: 130px;
+    height: 60px;
+    top:-8px;
+    overflow: hidden;
+  }
+
+  .navbar__logo img{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 90px;
+    width: 130px;
+
+    /* top: -30%; */
+    /* bottom: -10%; */
+  }
 
   .navbar__menu{
     display: flex;
@@ -137,20 +156,12 @@ p {
   .home__avatar{
     width: 800px;
     height: 600px;
-    /* border-radius: 50%; */
-    /* border: 2px soild var(--color-light-white); */
   }
-  /* 완 */
-  /* .home__title, .home__description{
-    color:cornflowerblue;
-  } */
 
-  .home__contact{
-    font-size: large;
-    font-weight:200;
-    margin: 24px;
-    padding:8px 12px;
-    border: 3px solid white;
-    border: radius 4px;;
-    color:blue;
+  /* Apply */
+  .qrcode{
+    margin:auto;
+    display:block;
+    padding:20px 20px;
+    width: 250px;
   }
