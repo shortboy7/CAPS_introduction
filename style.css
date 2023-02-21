@@ -4,6 +4,7 @@
   --color-main:#eedaa6;
   --color-blue:#90d0ff;
   --color-white: #ffffff;
+  --primary-color: #27DEBF;
 
   /* Size */
   --size-border-radius: 4px;
@@ -58,6 +59,8 @@ h3 {
   color: var(--color-black);
   margin: 8px 0;
 }
+
+
 
 p {
   font-size: var(--font-regular);
@@ -154,3 +157,74 @@ p {
     border: radius 4px;;
     color:blue;
   }
+
+
+  /* 카드형식 */
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .title {
+      text-align: center;
+      margin: 50px 0;
+  }
+  .title h5{
+    font-size: xx-large;
+    color: var(--color-blue);
+    text-transform: uppercase;
+  }
+  .column-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .card{
+    width: 30%;
+    margin-bottom: 50px;
+  }
+  .card img{
+      width: 100%;
+  }
+  .panel{
+    padding: 5%;
+    box-shadow: 0px 6px 18px -8px rgba(118,130,183,1);
+    border-radius: 10px;
+  }
+  span.date {
+      color: var(--color-blue);
+      font-weight: 700;
+  }
+  .card a {
+      text-decoration: none;
+      color: var(--color-blue);
+  }
+  .breaker {
+      display: inline-block;
+      height: 5px;
+      background: var(--color-blue);
+      width: 30px;
+      position: relative;
+      border-radius: 4px;
+  }
+  .breaker:after{
+    position: absolute;
+    content: "";
+    background: var(--color-blue);
+    width: 30px;
+    height: 5px;
+    left: 150%;
+    border-radius: 4px;
+  }
+  /* @media screen and (max-width: 786px){ 
+    .card{
+      width: 45%;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 430px){
+    .card{
+      width: 100%;
+    }
+  } 
+  */
