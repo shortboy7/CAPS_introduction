@@ -242,16 +242,28 @@ p {
 
   /* who */
 
-#Who {
+#WHO {
   background-color: var(--color-white);
-  margin-left: 450px;
-  margin-right: 450px;
+  margin-left: 400px;
+  margin-right: 400px;
 }
 
-.Who {
+.WHO {
   margin: 40px;
 }
 
+.title{
+  text-align: center;
+  color: var(--color-blue)
+}
+
+.title h1{
+    font-size: xx-large;
+  }
+
+  .title h3{
+    font-size: x-small;
+  }
 
 .people {
   display: flex;
@@ -265,7 +277,7 @@ p {
 }
 
 .people__avatar:nth-child(odd) {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .people__avatar:nth-child(even) {
