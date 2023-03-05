@@ -245,33 +245,31 @@ p {
 
   /*title*/
   .title h5{
+    margin-bottom: 30px;
+  }
+  .title{
     margin-bottom: 40px;
   }
 
   /*회장단*/
   .personset{
     display: flex;
-    text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
-
   .personset p {
     text-align: center;
   }
 
   .person__speech-bubble {
-    padding: 18px;
+    padding: 10px 10px 10px 10px;
     background-color: var(--color-main);
     border-radius: var(--size-border-radius);
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
   }
   
   .person__speech-bubble p {
     color: black;
   }
-  
   .person__speech-bubble a {
     color: blue;
   }
@@ -281,20 +279,16 @@ p {
     margin-left: 18%;
     width: 32%;
   }
-
   .person__left__image{
     text-align: right;
     padding-right: 15%;
   }
-
   /*부회장*/
   .person__right{
     width: 32%;
     margin-right: 18%;
   }
-
   .person__right__image{
-    text-align: left;
     padding-left: 15%;
   }
 
@@ -305,39 +299,25 @@ p {
     width: 100%;
   }
 
-  
   .people:nth-child(odd){
     margin-left: 18%;
-    margin-right: 0;
   }
-
   .people:nth-child(even){
-    margin-left: 0;
     margin-right: 18%;
   }
-
-  .people__avatar:nth-child(odd) {
-    margin-left: 0%;
-  }
-  
-  .people__avatar:nth-child(even) {
-    margin-right: 0px;
-  }
-  
   
   .people__speech-bubble {
-    padding: 8px 5px 5px 5px; 
+    min-height: 100px;
+    padding: 12px 13px;
     background-color: var(--color-main);
-    height: 100px;
+    border-radius: var(--size-border-radius);
     width: 50%;
     margin-bottom : 50px;
   }
 
   .people__speech-bubble:nth-child(odd){
     margin-left: 25%;
-    text-align: right;
   }
-
   .people__speech-bubble:nth-child(even){
     margin-right: 25%;
   }
@@ -345,47 +325,9 @@ p {
   .people__speech-bubble p {
     color: black;
   }
-  
   .people__speech-bubble a {
     color: blue;
   }
 
-  
-  
-  /**/
 
-.testimonial {
-  display: flex;
-  margin: 32px 0;
-}
-
-.testimonial__avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-.testimonial__avatar:nth-child(odd) {
-  margin-right: 40px;
-}
-
-.testimonial__avatar:nth-child(even) {
-  margin-left: 40px;
-}
-
-.testimonial__speech-bubble {
-  padding: 18px;
-  background-color: var(--color-white);
-  border-radius: var(--size-border-radius);
-}
-
-.testimonial__speech-bubble p {
-  color: var(--color-light-grey);
-}
-
-.testimonial__speech-bubble a {
-  color: var(--color-pink);
-}
-
-  
 
