@@ -247,8 +247,9 @@ p {
   .title h5{
     margin-bottom: 30px;
   }
-  .title{
-    margin-bottom: 40px;
+  .title p{
+    font-size:large;
+    margin-bottom: 50px;
   }
 
   /*회장단*/
@@ -265,10 +266,12 @@ p {
     background-color: var(--color-main);
     border-radius: var(--size-border-radius);
     margin: 0 20px;
+    font-size:medium
   }
   
   .person__speech-bubble p {
     color: black;
+    
   }
   .person__speech-bubble a {
     color: blue;
@@ -281,7 +284,7 @@ p {
   }
   .person__left__image{
     text-align: right;
-    padding-right: 15%;
+    padding-right: 35%;
   }
   /*부회장*/
   .person__right{
@@ -289,7 +292,7 @@ p {
     margin-right: 18%;
   }
   .person__right__image{
-    padding-left: 15%;
+    padding-left: 35%;
   }
 
 
@@ -297,6 +300,7 @@ p {
   .people {
     display: flex;
     width: 100%;
+    font-size:medium;
   }
 
   .people:nth-child(odd){
@@ -328,6 +332,8 @@ p {
   .people__speech-bubble a {
     color: blue;
   }
+
+  /*QR */
 
 
 
