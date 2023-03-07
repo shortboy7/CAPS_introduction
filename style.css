@@ -230,51 +230,105 @@ p {
 
  
 
+  
   /* who */
 
-#Who {
-  background-color: var(--color-white);
-  margin-left: 450px;
-  margin-right: 450px;
-}
+  /*title*/
+  .title h5{
+    margin-bottom: 30px;
+  }
+  .title p{
+    font-size:large;
+    margin-bottom: 50px;
+  }
 
-.Who {
-  margin: 40px;
-}
+  /*회장단*/
+  .personset{
+    display: flex;
+    margin-bottom: 80px;
+  }
+  .personset p {
+    text-align: center;
+  }
+
+  .person__speech-bubble {
+    padding: 10px 10px 10px 10px;
+    background-color: var(--color-main);
+    border-radius: var(--size-border-radius);
+    margin: 0 20px;
+    font-size:medium
+  }
+  
+  .person__speech-bubble p {
+    color: black;
+    
+  }
+  .person__speech-bubble a {
+    color: blue;
+  }
+
+  /*회장*/
+  .person__left{
+    margin-left: 18%;
+    width: 32%;
+  }
+  .person__left__image{
+    text-align: right;
+    padding-right: 35%;
+  }
+  /*부회장*/
+  .person__right{
+    width: 32%;
+    margin-right: 18%;
+  }
+  .person__right__image{
+    padding-left: 35%;
+  }
 
 
-.people {
-  display: flex;
-  margin: 32px 0;
-}
+  /*부장단*/
+  .people {
+    display: flex;
+    width: 100%;
+    font-size:medium;
+  }
 
-.people__avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
+  .people:nth-child(odd){
+    margin-left: 18%;
+  }
+  .people:nth-child(even){
+    margin-right: 18%;
+  }
+  
+  .people__speech-bubble {
+    min-height: 100px;
+    padding: 12px 13px;
+    background-color: var(--color-main);
+    border-radius: var(--size-border-radius);
+    width: 50%;
+    margin-bottom : 50px;
+  }
 
-.people__avatar:nth-child(odd) {
-  margin-right: 40px;
-}
+  .people__speech-bubble:nth-child(odd){
+    margin-left: 25%;
+  }
+  .people__speech-bubble:nth-child(even){
+    margin-right: 25%;
+  }
+  
+  .people__speech-bubble p {
+    color: black;
+  }
+  .people__speech-bubble a {
+    color: blue;
+  }
 
-.people__avatar:nth-child(even) {
-  margin-left: 20px;
-}
+  /*QR */
 
-.people__speech-bubble {
-  padding: 18px;
-  background-color: var(--color-main);
-  border-radius: var(--size-border-radius);
-}
 
-.people__speech-bubble p {
-  color: black;
-}
 
-.people__speech-bubble a {
-  color: blue;
-}
+
+
 
 #what{
   background-color: #FACAA7;
@@ -286,3 +340,4 @@ p {
   width: 0px;
   z-index: -1;
 }
+
