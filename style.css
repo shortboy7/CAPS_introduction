@@ -112,7 +112,7 @@ p {
   .navbar__logo{
     position: relative;
     width: 130px;
-    height: 60px;
+    height: 75px;
     top:-8px;
     overflow: hidden;
   }
@@ -151,6 +151,7 @@ p {
 
 
   #home{
+    
     background:var(--color-main);
     padding: 40px;
     text-align: center;
@@ -185,7 +186,7 @@ p {
     text-transform: uppercase;
   }
   .column-card {
-      display: flex;
+      display:flex;
       flex-wrap: wrap;
       justify-content: space-between;
   }
@@ -226,19 +227,8 @@ p {
     left: 150%;
     border-radius: 4px;
   }
-  /* @media screen and (max-width: 786px){ 
-    .card{
-      width: 45%;
-      margin-bottom: 30px;
-    }
-  }
-  
-  @media screen and (max-width: 430px){
-    .card{
-      width: 100%;
-    }
-  } 
-  */
+
+ 
 
   
   /* who */
@@ -336,4 +326,18 @@ p {
   /*QR */
 
 
+
+
+
+
+#what{
+  background-color: #FACAA7;
+}
+
+#canvas{
+  position:fixed;
+  height: 0px;
+  width: 0px;
+  z-index: -1;
+}
 
