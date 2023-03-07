@@ -186,7 +186,7 @@ p {
     text-transform: uppercase;
   }
   .column-card {
-      display: flex;
+      display:flex;
       flex-wrap: wrap;
       justify-content: space-between;
   }
