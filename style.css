@@ -99,7 +99,7 @@ p {
   ul li{
     display:inline-block;
   }
-  
+
 
 /* Nabar */
 #navbar {
@@ -226,18 +226,18 @@ p {
     left: 150%;
     border-radius: 4px;
   }
-  /* @media screen and (max-width: 786px){ 
+  /* @media screen and (max-width: 786px){
     .card{
       width: 45%;
       margin-bottom: 30px;
     }
   }
-  
+
   @media screen and (max-width: 430px){
     .card{
       width: 100%;
     }
-  } 
+  }
   */
 
   /* who */
@@ -284,4 +284,40 @@ p {
 
 .people__speech-bubble a {
   color: blue;
+}
+
+
+/* Where */
+.map__body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.map{
+  height: 500px;
+  width: 600px;
+}
+
+#pano > div{
+  position: relative;
+  height: 500px;
+  width: 600px;
+}
+
+#pano{
+  width: 100%;
+  transition : all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+  .map__body{
+    flex-direction: column;
+  }
+  .map{
+    width: 100%;
+  }
+  #pano > div{
+    width: 100%;
+  }
 }
