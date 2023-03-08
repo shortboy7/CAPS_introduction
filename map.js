@@ -210,7 +210,7 @@ async function reset(){
 	indoorview.style.display = 'none';
 	roadview_container.style.display = 'block';
 	roadview.setPanoId(scenes[curPhase].panorams[curStep], scenes[curPhase].path[curStep]);
-	await usleep(300);
+	await usleep(400);
 	addMarker(startOfItems(scenes[curPhase].path), roadview);
 	updateMarker();
 }
