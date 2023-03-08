@@ -206,10 +206,11 @@ async function reset(){
 	curStep = 0;
 	prevMarker = 0;
 	nextMarker = 0;
-	roadview_container.style.display = 'block';
-	indoorview.style.display = 'none';
 	resetMarker();
+	indoorview.style.display = 'none';
+	roadview_container.style.display = 'block';
 	roadview.setPanoId(scenes[curPhase].panorams[curStep], scenes[curPhase].path[curStep]);
+	await usleep(500);
 	addMarker(startOfItems(scenes[curPhase].path), roadview);
 	updateMarker();
 }
@@ -280,6 +281,6 @@ window.onload = () =>{
 	updateMarker();
 }
 
-window.addEventListener('focus', () => {
+window.addEventListener('focus', ()=>{
 	reset();
 });
