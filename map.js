@@ -206,9 +206,9 @@ async function reset(){
 	curStep = 0;
 	prevMarker = 0;
 	nextMarker = 0;
-	resetMarker();
-	indoorview.style.display = 'none';
 	roadview_container.style.display = 'block';
+	indoorview.style.display = 'none';
+	resetMarker();
 	roadview.setPanoId(scenes[curPhase].panorams[curStep], scenes[curPhase].path[curStep]);
 	await usleep(400);
 	addMarker(startOfItems(scenes[curPhase].path), roadview);
@@ -281,3 +281,6 @@ window.onload = () =>{
 	updateMarker();
 }
 
+window.addEventListener('focus', () => {
+	reset();
+});

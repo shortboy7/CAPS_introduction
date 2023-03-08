@@ -170,6 +170,7 @@
           'caps 동아리 홈페이지'
         );
         reset();
+        switchScene(scenes[4]);
         return;
       }
       switchScene(findSceneById(hotspot.target));
