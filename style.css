@@ -99,7 +99,7 @@ p {
   ul li{
     display:inline-block;
   }
-  
+
 
 /* Nabar */
 #navbar {
@@ -151,7 +151,7 @@ p {
 
 
   #home{
-    
+
     background:var(--color-main);
     padding: 40px;
     text-align: center;
@@ -228,9 +228,9 @@ p {
     border-radius: 4px;
   }
 
- 
 
-  
+
+
   /* who */
 
   /*title*/
@@ -258,10 +258,10 @@ p {
     margin: 0 20px;
     font-size:medium
   }
-  
+
   .person__speech-bubble p {
     color: black;
-    
+
   }
   .person__speech-bubble a {
     color: blue;
@@ -299,7 +299,7 @@ p {
   .people:nth-child(even){
     margin-right: 18%;
   }
-  
+
   .people__speech-bubble {
     min-height: 100px;
     padding: 12px 13px;
@@ -315,7 +315,7 @@ p {
   .people__speech-bubble:nth-child(even){
     margin-right: 25%;
   }
-  
+
   .people__speech-bubble p {
     color: black;
   }
@@ -341,3 +341,60 @@ p {
   z-index: -1;
 }
 
+.people__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.people__avatar:nth-child(even) {
+  margin-left: 20px;
+}
+
+.people__speech-bubble {
+  padding: 18px;
+  background-color: var(--color-main);
+  border-radius: var(--size-border-radius);
+}
+
+.people__speech-bubble p {
+  color: black;
+}
+
+.people__speech-bubble a {
+  color: blue;
+}
+
+
+/* Where */
+.map__body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.map{
+  height: 500px;
+  width: 600px;
+}
+
+#pano > div{
+  position: relative;
+  height: 500px;
+  width: 600px;
+}
+
+#pano{
+  width: 100%;
+  transition : all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+  .map__body{
+    flex-direction: column;
+  }
+  .map{
+    width: 100%;
+  }
+  #pano > div{
+    width: 100%;
+  }
+}
